@@ -1,15 +1,19 @@
-body { height: 100%; }
+body {
+    height: 100%; 
+    background-color: cornflowerblue;
+}
 
 #container {
-    background-color: cornflowerblue;
+    background-color: aquamarine;
+    box-sizing: border-box;
 
     min-height: 100%;
-    width: 100%;
+    margin: 0;
+    padding: 0;
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-items: center;
     justify-content: center;
 }
 
