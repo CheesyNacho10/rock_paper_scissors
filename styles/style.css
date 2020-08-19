@@ -1,0 +1,28 @@
+body { height: 100%; }
+
+#container {
+    background-color: cornflowerblue;
+
+    min-height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+}
+
+.view {
+    height: 300px;
+    width: 700px;
+
+    background-color: black;
+}
+
+.buttons {
+    height: 200px;
+    width: 600px;
+
+    background-color: cyan;
+}
