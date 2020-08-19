@@ -1,15 +1,13 @@
-body {
-    height: 100%; 
-    background-color: cornflowerblue;
+img {
+    width: 100%;
+    height: auto;
 }
 
 #container {
     background-color: aquamarine;
-    box-sizing: border-box;
 
-    min-height: 100%;
-    margin: 0;
-    padding: 0;
+    width: 100%;
+    height: 100vh;
 
     display: flex;
     flex-direction: column;
@@ -17,11 +15,28 @@ body {
     justify-content: center;
 }
 
-.view {
-    height: 300px;
-    width: 700px;
+.output {
+    height: 350px;
+    width: 600px;
 
-    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 40px auto;
+    grid-column-gap: 40px;
+    grid-row-gap: 15px;
+    grid-template-areas: 
+        'player computer'
+        'player_choice computer_choice';
+    background-color: chartreuse;
+}
+
+#player { grid-area: player; justify-self: center; }
+#computer { grid-area: computer; justify-self: center; }
+#player_choice { grid-area: player_choice; justify-self: center; }
+#computer_choice { grid-area: computer_choice; justify-self: center; }
+
+h2 {
+    font-size: 32px;
 }
 
 .buttons {
