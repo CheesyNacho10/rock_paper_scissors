@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <title>Rock, paper, scissors!</title>
+  <link rel="icon" href="images/paper.png">
   <meta charset="UTF-8"/>
   <link href="styles/reset.css" rel="stylesheet">
   <link href="styles/style.css" rel="stylesheet">
@@ -12,14 +13,20 @@
       <h2 id="player">Player's choice</h2>
       <h2 id="computer">Computer's choice</h2>
       <img id="player_choice" src="images/rock.png">
-      <img id="computer_choice" src="images/scissors_fliped.png">
+      <img id="computer_choice" src="images/rock_fliped.png">
+      <h2 id="message">Fight!</h2>
+      <div id="score">
+        <h2 id="player_score">0</h2>
+        <h2>-</h2>
+        <h2 id="computer_score">0</h2>
+      </div>
     </header>
-    <footer class="buttons">
+    <footer class="input">
       <h1>Choose your fighter!</h1>
-      <div>
-        <button>Rock</button>
-        <button>Paper</button>
-        <button>Sicissors</button>
+      <div id="buttons">
+        <button id="rock" type="button"><img class="button" src="images/rock.png"></button>
+        <button id="paper" type="button"><img class="button" src="images/paper.png"></button>
+        <button id="scissors" type="button"><img class="button" src="images/scissors.png"></button>
       </div>
     </footer>
   </div>
